@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/widgets/drawer_widget.dart';
+import 'package:flutter_demo/widgets/loader_widget.dart';
 import 'package:flutter_demo/widgets/row_columns_widget.dart';
 import 'package:flutter_demo/widgets/stack_widget.dart';
 import 'package:flutter_demo/widgets/stack_with_alignment_widget.dart';
+import 'package:flutter_demo/widgets/tab_widget.dart';
 import 'detailComponent.dart';
 import 'package:flutter_demo/widgets/text_field_widget.dart';
 import 'package:flutter_demo/widgets/dialog_widget.dart';
@@ -58,7 +60,9 @@ class HomeScreen extends StatelessWidget {
     ),
 
     'Dialog': Scaffold(
-      body: DialogDemo(),
+      body: Center(
+        child: dialogWidget,
+      ),
 
   ),
     'StaggeredGridView': Scaffold(
@@ -71,6 +75,10 @@ class HomeScreen extends StatelessWidget {
     'ScrollView' : Scaffold(
       body: singlechildscroll,
     ),
+    'TabBar' : Scaffold(
+      body: tabBarWidget,
+    ),
+    'Loader': loaderWidget,
   };
 
   @override
