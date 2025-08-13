@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/widgets/drawer_widget.dart';
+import 'package:flutter_demo/widgets/font_widget.dart';
 import 'package:flutter_demo/widgets/loader_widget.dart';
 import 'package:flutter_demo/widgets/row_columns_widget.dart';
 import 'package:flutter_demo/widgets/stack_widget.dart';
@@ -79,6 +80,7 @@ class HomeScreen extends StatelessWidget {
       body: tabBarWidget,
     ),
     'Loader': loaderWidget,
+    'Fonts': appContentWidget,
   };
 
   @override
