@@ -12,6 +12,7 @@ import 'package:flutter_demo/widgets/dialog_widget.dart';
 import 'package:flutter_demo/widgets/staggeredGrid_widget.dart';
 import 'package:flutter_demo/widgets/inkwell_widget.dart';
 import 'package:flutter_demo/widgets/scrollview_widget.dart';
+import 'package:flutter_demo/widgets/skeletonText_widget.dart';
 
 
 
@@ -55,10 +56,10 @@ class HomeScreen extends StatelessWidget {
       // appBar: AppBar(title: Text('Row and Columns and SizedBox Example')),
       body: rowcolumn,
     ),
-    'Button': ElevatedButton(
-      onPressed: () {},
-      child: Text('Click Me'),
-    ),
+    // 'Button': ElevatedButton(
+    //   onPressed: () {},
+    //   child: Text('Click Me'),
+    // ),
 
     'Dialog': Scaffold(
       body: Center(
@@ -81,6 +82,7 @@ class HomeScreen extends StatelessWidget {
     ),
     'Loader': loaderWidget,
     'Fonts': appContentWidget,
+    'SkeletonText': skeletonList,
   };
 
   @override
