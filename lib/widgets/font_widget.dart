@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
 Widget get appContentWidget => Scaffold(
-  appBar: AppBar(
-    title: Text("Fonts"),
-    backgroundColor: Colors.lightGreen,
-    foregroundColor: Colors.white,
-  ),
   body: SafeArea(
     child: Center(
       child: Text(
