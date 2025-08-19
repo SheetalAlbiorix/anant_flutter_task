@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/widgets/drawer_widget.dart';
 import 'package:flutter_demo/widgets/font_widget.dart';
 import 'package:flutter_demo/widgets/loader_widget.dart';
+import 'package:flutter_demo/widgets/page_transition_widget.dart';
 import 'package:flutter_demo/widgets/row_columns_widget.dart';
 import 'package:flutter_demo/widgets/stack_widget.dart';
 import 'package:flutter_demo/widgets/stack_with_alignment_widget.dart';
@@ -86,6 +87,7 @@ class HomeScreen extends StatelessWidget {
     'SkeletonText': skeletonList,
     'LazyLoader': LazyLoadWidget() ,
     'UIOrientation': uiOrientation,
+    'pageTransition': pageTransitionWidget,
   };
 
   @override
