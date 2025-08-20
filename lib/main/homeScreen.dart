@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/widgets/date_picker.dart';
 import 'package:flutter_demo/widgets/drawer_widget.dart';
 import 'package:flutter_demo/widgets/font_widget.dart';
 import 'package:flutter_demo/widgets/loader_widget.dart';
@@ -88,6 +89,7 @@ class HomeScreen extends StatelessWidget {
     'LazyLoader': LazyLoadWidget() ,
     'UIOrientation': uiOrientation,
     'pageTransition': pageTransitionWidget,
+    'datePicker':datePicker,
   };
 
   @override
