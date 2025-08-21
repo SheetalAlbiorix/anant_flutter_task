@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 InkWell get inkWell => InkWell(
-
-    child: InkWell(
       onTap: (){
         print("InkWell is Tapped");
       },
@@ -18,6 +16,4 @@ InkWell get inkWell => InkWell(
         color: Colors.orangeAccent,
         child: Center(child: Text("Click here",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w400))),
       ),
-    ),
-
 );

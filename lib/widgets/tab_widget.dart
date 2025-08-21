@@ -21,7 +21,6 @@ Widget get tabBarWidget => DefaultTabController(
     backgroundColor: Colors.green,
 
   ),
-
   body:  const TabBarView(children: [
     Icon(Icons.music_note, size: 100),
     Icon(Icons.music_video, size: 100),

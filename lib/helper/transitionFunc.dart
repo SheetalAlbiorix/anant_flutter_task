@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/widgets/page_transition_widget.dart';
 
 
-Route createRoute() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => const Page2(title: "Slide Transition"),
+Route createRoute() => PageRouteBuilder(
+    pageBuilder: (_, __, ___) => const Page2(title: "Slide Transition"),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
       var begin = const Offset(0.0, 1.0);
       var end = Offset.zero;
@@ -19,19 +18,17 @@ Route createRoute() {
       );
     },
   );
-}
 
-Route fadeRoute() {
-  return PageRouteBuilder(
+
+Route fadeRoute() => PageRouteBuilder(
     pageBuilder: (_, __, ___) => const Page2(title: "Fade Transition"),
     transitionsBuilder: (_, animation, __, child) {
       return FadeTransition(opacity: animation, child: child);
     },
   );
-}
 
-Route scaleRoute() {
-  return PageRouteBuilder(
+
+Route scaleRoute() => PageRouteBuilder(
     pageBuilder: (_, __, ___) => const Page2(title: "Scale Transition"),
     transitionsBuilder: (_, animation, __, child) {
       final tween = Tween<double>(begin: 0.0, end: 1.0)
@@ -39,13 +36,11 @@ Route scaleRoute() {
       return ScaleTransition(scale: animation.drive(tween), child: child);
     },
   );
-}
 
-Route rotationRoute() {
-  return PageRouteBuilder(
+
+Route rotationRoute() => PageRouteBuilder(
     pageBuilder: (_, __, ___) => const Page2(title: "Rotation Transition"),
     transitionsBuilder: (_, animation, __, child) {
       return RotationTransition(turns: animation, child: child);
     },
   );
-}

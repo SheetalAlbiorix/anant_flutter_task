@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget get uiOrientation => Scaffold(
-  body: OrientationBuilder(
+Widget get uiOrientation => OrientationBuilder(
     builder: (context, orientation) {
       return GridView.count(
         //grid with 3 and 4 columns for portrait and landscape mode respectively
@@ -17,8 +16,8 @@ Widget get uiOrientation => Scaffold(
         }),
       );
     },
-  ),
-);
+  );
+
 
 
 

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget get loaderWidget => Scaffold(
-
-body: Center(
+Widget get loaderWidget => Center(
   child: Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -11,5 +9,4 @@ body: Center(
       LinearProgressIndicator(),
     ],
   ),
-),
 );

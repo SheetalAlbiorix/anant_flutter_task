@@ -8,7 +8,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Widget Explorer',
-      theme: ThemeData(primarySwatch: Colors.indigo),
       home: HomeScreen(),
     );
   }
