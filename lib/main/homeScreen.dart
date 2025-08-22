@@ -8,7 +8,7 @@ import 'package:flutter_demo/widgets/row_columns_widget.dart';
 import 'package:flutter_demo/widgets/stack_widget.dart';
 import 'package:flutter_demo/widgets/stack_with_alignment_widget.dart';
 import 'package:flutter_demo/widgets/tab_widget.dart';
-import 'package:flutter_demo/widgets/uiorientation_widget.dart';
+import 'package:flutter_demo/widgets/uiOrientation_widget.dart';
 import 'detailComponent.dart';
 import 'package:flutter_demo/widgets/text_field_widget.dart';
 import 'package:flutter_demo/widgets/dialog_widget.dart';
@@ -16,7 +16,8 @@ import 'package:flutter_demo/widgets/staggeredGrid_widget.dart';
 import 'package:flutter_demo/widgets/inkwell_widget.dart';
 import 'package:flutter_demo/widgets/scrollview_widget.dart';
 import 'package:flutter_demo/widgets/skeletonText_widget.dart';
-import 'package:flutter_demo/widgets/lazyloader_widget.dart';
+import 'package:flutter_demo/widgets/lazyLoader_widget.dart';
+import 'package:flutter_demo/main/formValidation.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -65,6 +66,7 @@ class HomeScreen extends StatelessWidget {
     'UIOrientation': uiOrientation,
     'pageTransition': pageTransitionWidget,
     'datePicker':datePicker,
+    'formValidation':  FormValidationDemoWidget(),
   };
   @override
   Widget build(BuildContext context) {
