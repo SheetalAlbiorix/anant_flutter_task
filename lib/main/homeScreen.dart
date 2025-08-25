@@ -18,6 +18,7 @@ import 'package:flutter_demo/widgets/scrollview_widget.dart';
 import 'package:flutter_demo/widgets/skeletonText_widget.dart';
 import 'package:flutter_demo/widgets/lazyLoader_widget.dart';
 import 'package:flutter_demo/main/formValidation.dart';
+import 'package:flutter_demo/main/counterPage.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -67,6 +68,7 @@ class HomeScreen extends StatelessWidget {
     'pageTransition': pageTransitionWidget,
     'datePicker':datePicker,
     'formValidation':  FormValidationDemoWidget(),
+    'counterPage': CounterPage(),
   };
   @override
   Widget build(BuildContext context) {
