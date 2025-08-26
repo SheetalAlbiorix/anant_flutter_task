@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/main/getxHomeScreen.dart';
 import 'package:flutter_demo/widgets/date_picker.dart';
 import 'package:flutter_demo/widgets/drawer_widget.dart';
 import 'package:flutter_demo/widgets/font_widget.dart';
@@ -69,6 +70,7 @@ class HomeScreen extends StatelessWidget {
     'datePicker':datePicker,
     'formValidation':  FormValidationDemoWidget(),
     'counterPage': CounterPage(),
+    'getxHomeScreen': GetXHomeScreen(),
   };
   @override
   Widget build(BuildContext context) {
